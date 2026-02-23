@@ -1,6 +1,6 @@
 # Mi Ruta de Aprendizaje de Excel
-Autor: Briyit
-Propósito: Construir bases sólidas en Excel para avanzar hacia un perfil analítico.
+- Autor: Briyit
+- Propósito: Construir bases sólidas en Excel para avanzar hacia un perfil analítico.
 
 ##  Descripción del repositorio
 Este repositorio documenta mi proceso de aprendizaje de Excel profesional, combinando cursos, práctica autodidacta y ejercicios propios.
