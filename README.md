@@ -22,6 +22,8 @@ Aquí registraré:
     |_____curso_excel_santander
            /___imagenes
            /___Modulo_1_Tabla_de_datos.md
+           /___Modulo_2_Funciones.md
+
 
 
 ```
