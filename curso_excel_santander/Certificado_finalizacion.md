@@ -12,3 +12,4 @@ BUSCARV, en particular, dejó de ser “esa función que a veces funciona y a ve
 
 Ha sido un curso muy bien estructurado, y me alegra haberlo terminado porque ahora tengo una base firme para seguir avanzando. Este repositorio recoge todo mi proceso: apuntes, ejercicios y los temas que fui aprendiendo paso a paso.
 
+![Certificaion](imagenes/certificacion.png)
