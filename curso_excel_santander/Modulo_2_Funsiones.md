@@ -129,7 +129,7 @@ img 5 - 7
 - **Vincular sobre una tabla**
 
 ---
-Practica
+**Practica**
 - Haz los siguientes cálculos con las funciones explicadas hasta ahora, sobre la TABLA T_CURSOS en las celdas que a continuación se indica:
 - En B2: contar todos los datos de la columna curso.
 - En B3: contar el número de cursos con importe profesor menor de 500.
@@ -248,39 +248,35 @@ Ahora en la tabla en la que vamos a trabajar
 
 - 29. EJERCICIO BUSCARV VERDADERO
 
-img 22, 23 
-
-=VLOOKUP(F2,$A$2:$C$8,3,1)
-cambiamos el formato de número a porcentaje 
-24
+- img 22, 23
+-
+- =VLOOKUP(F2,$A$2:$C$8,3,1)
+- cambiamos el formato de número a porcentaje
+- 24 img
 
 
 ## Función SI
- Sirve para que Excel tome una decisión según una condición. Básicamente le digo: “si pasa esto, haz esto; y si no pasa, haz lo otro”. Funciona con tres partes: la condición que quiero comprobar, el resultado si la condición es verdadera y el resultado si es falsa. Por ejemplo, puedo usar SI para saber si un número es mayor que otro, si una celda está vacía o si un valor coincide con algo.
-img 25
-
-https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631
-
+Sirve para que Excel tome una decisión según una condición. Básicamente le digo: “si pasa esto, haz esto; y si no pasa, haz lo otro”. Funciona con tres partes: la condición que quiero comprobar, el resultado si la condición es verdadera y el resultado si es falsa. Por ejemplo, puedo usar SI para saber si un número es mayor que otro, si una celda está vacía o si un valor coincide con algo.
+- img 25
+- https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631
+  
+---
 En la función SI, después de la condición, van dos argumentos:
 - valor_si_verdadero: lo que quiero que Excel muestre cuando la condición se cumple.
 - valor_si_falso: lo que quiero que aparezca cuando la condición no se cumple.
 - Es como decirle a Excel:
-“Si esto pasa, pon esto; y si no pasa, pon lo otro.”
-https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631
- img 26
-
-img 27
-recordar poner las referencias absolutas 
-
-img 28
-es descuento del 10 % va hacer a los cursos que tengan una duración mayor a 18
-
-img 29
-=IF(B6>18,C6*$D$1,"SIN DT")
-
-img 30
-=IF(D6="SIN DT",C6,C6-D6)
-31 
+`“Si esto pasa, pon esto; y si no pasa, pon lo otro.”
+https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631`
+- img 26
+- img 27
+- recordar poner las referencias absolutas
+- img 28
+- es descuento del 10 % va hacer a los cursos que tengan una duración mayor a 18
+- img 29
+- =IF(B6>18,C6*$D$1,"SIN DT")
+- img 30
+- =IF(D6="SIN DT",C6,C6-D6)
+- 31 
 
 
 ## Introducción a las tablas dinámicas I
@@ -288,10 +284,10 @@ Una tabla dinámica en Excel es una herramienta que te deja resumir, organizar y
 
 ---
 
-Insertar una tabla dinámica
-32
-abrimos el fichero , en la tabla cursos, seleccionamos una celda dentro de la tabla  que vamos a resumir 
-
+**Insertar una tabla dinámica**
+- 32
+---
+Abrimos el fichero , en la tabla cursos, seleccionamos una celda dentro de la tabla  que vamos a resumir 
 
 - En la cinta de herramientas en la opción insertar encontraremos la tabla dinamica
 - 33
@@ -299,212 +295,152 @@ abrimos el fichero , en la tabla cursos, seleccionamos una celda dentro de la ta
 - 34
 - como podemos ver nos muestra en nombre de la tabla si fuera un rango nos mostraria la dirección rango de origen
 
-
+--- 
 tenemos dos opciones si queremos que se cree en una nueva hoja o en la misma hoja 
+- en este caso seleccionamos una nueva hoja
+- asi se  ve la nueva  hoja creada
+- 35
+- se denomina área de la tabla dinámica o esqueleto de la tabla dinámica.
+- En esta imagen podemos ver el panel de campos de la tabla dinamica
+- 36 
 
-en este caso seleccionamos una nueva hoja
 
-asi se  ve la nueva  hoja creada 
-35 
-se denomina área de la tabla dinámica o esqueleto de la tabla dinámica.
-En esta imagen podemos ver el panel de campos de la tabla dinamica
+--- 
 
-36 
-
- FILAS: lo que quiero ver listado
+#### FILAS: lo que quiero ver listado
 En FILAS coloco el campo que quiero que aparezca uno debajo de otro, como una lista organizada.
-Es la parte que “estructura” la tabla.
-Si pongo Referencia, me lista todas las referencias.
-Si pongo Fecha, me agrupa por fechas.
-Si pongo Proveedor, me muestra cada proveedor.
-FILAS sirve para ver los datos ordenados por categorías.
- COLUMNAS: cómo quiero dividir la información
+- Es la parte que “estructura” la tabla.
+- Si pongo Referencia, me lista todas las referencias.
+- Si pongo Fecha, me agrupa por fechas.
+- Si pongo Proveedor, me muestra cada proveedor.
+- FILAS sirve para ver los datos ordenados por categorías.
+#### COLUMNAS: cómo quiero dividir la información
 En COLUMNAS coloco un campo que quiero que se muestre de izquierda a derecha, creando “bloques”.
-Si pongo Mes, me crea columnas por cada mes.
-Si pongo Tipo de producto, me divide por tipos.
-COLUMNAS sirve para comparar categorías entre sí.
- FILTROS: elegir qué quiero ver sin cambiar la tabla
+- Si pongo Mes, me crea columnas por cada mes.
+- Si pongo Tipo de producto, me divide por tipos.
+- COLUMNAS sirve para comparar categorías entre sí.
+#### FILTROS: elegir qué quiero ver sin cambiar la tabla
 El FILTRO es como un selector general.
-Sirve para filtrar toda la tabla dinámica sin tocar nada dentro.
-Si pongo Año, puedo elegir ver solo 2023 o solo 2024.
-Si pongo Proveedor, puedo ver solo un proveedor concreto.
-FILTRO sirve para ver solo una parte de los datos, sin modificar la estructura.
- VALORES: los cálculos (sumas, conteos, promedios…)
+- Sirve para filtrar toda la tabla dinámica sin tocar nada dentro.
+- Si pongo Año, puedo elegir ver solo 2023 o solo 2024.
+- Si pongo Proveedor, puedo ver solo un proveedor concreto.
+- FILTRO sirve para ver solo una parte de los datos, sin modificar la estructura.
+### VALORES: los cálculos (sumas, conteos, promedios…)
 En VALORES van los campos que quiero calcular.
-Suma de importes
-Número de compras
-Promedio de precios
-Máximo o mínimo
-Es el área donde Excel hace la “matemática”.
-Además:
-VALORES sí permite repetir un campo (por ejemplo, sumar y promediar el mismo importe).
-VALORES es compatible con todas las demás áreas.
-FILAS → qué quiero listar
-COLUMNAS → cómo quiero dividirlo
-VALORES → qué quiero calcular
-FILTRO → qué quiero mostrar o esconder
+- Suma de importes
+- Número de compras
+- Promedio de precios
+- Máximo o mínimo
+- Es el área donde Excel hace la “matemática”.
+- Además:
+  - VALORES sí permite repetir un campo (por ejemplo, sumar y promediar el mismo importe).
+  - VALORES es compatible con todas las demás áreas.
+  - FILAS → qué quiero listar
+  - COLUMNAS → cómo quiero dividirlo
+  - VALORES → qué quiero calcular
+  - FILTRO → qué quiero mostrar o esconder
 
+---
+Continuamos con la actividad 
 
-seguimos con la actividad 
-
-
-Seleccionamos cursos , lo llevamos a la opción filas de nuestro panel de opciones de tabla dinamica
-
-37 
-jornada curso lo pondremos en columnas 
-
-
-38
-
-en area de valores seleccionamos duración
-
-39
-
-se filtran los datos por los cursos dados en Esppaña , para ello movemos el campo país a filtros
-
-40
-seleccionamos en el filtro solo a ESPAÑA 
-
-41
-42
-
-ahora vamos a insertar otra tabla dinámica en la misma hoja en la que estamos trabajando con la primera hoja dinámica.
-
-para ello volvemos a la tabla de datos en la hoja de nombre CURSOS 
-
-en la cinta de herramientas seleccionamos insertar , tabla dinamica , 
-
-43
-
-seleccionamos hoja existente 
-
-44
-
-seleccionamos el sector donde queremos que la nueva tabla dinámica se cree  , damos click en ok
-
-45
+- Seleccionamos cursos , lo llevamos a la opción filas de nuestro panel de opciones de tabla dinamica
+- 37
+- jornada curso lo pondremos en columnas
+- 38
+- en area de valores seleccionamos duración
+- 39
+- se filtran los datos por los cursos dados en Esppaña , para ello movemos el campo país a filtros
+- 40
+- seleccionamos en el filtro solo a ESPAÑA
+  41
+- 42
+- ahora vamos a insertar otra tabla dinámica en la misma hoja en la que estamos trabajando con la primera hoja dinámica.
+- para ello volvemos a la tabla de datos en la hoja de nombre CURSOS
+- en la cinta de herramientas seleccionamos insertar , tabla dinamica ,
+- 43
+- seleccionamos hoja existente
+- 44
+- seleccionamos el sector donde queremos que la nueva tabla dinámica se cree  , damos click en ok
+- 45
 
 
 ### Modificaciones en las tablas dinámicas
 Cambiar el orden de los campos de valores
-seleccionamos la columna de nuestra tabla dinámica que queremos reordenar 
-
-46 
-seleccionamos la opción más adecuada para este ejemplo
-
-47
-
-podemos apreciar como se ordena la tabla dinámica 
-
-si queremos ordenar de forma descendente jornada del curso , se selecciona la última celda  de jornada de curso click derecho ordenar .
-
-48
-
-Ejercicio
+- seleccionamos la columna de nuestra tabla dinámica que queremos reordenar
+- 46
+- seleccionamos la opción más adecuada para este ejemplo
+- 47
+- podemos apreciar como se ordena la tabla dinámica
+- si queremos ordenar de forma descendente jornada del curso , se selecciona la última celda  de jornada de curso click derecho ordenar .
+- 48
+  
+---
+**Ejercicio**
 En la tabla dinámica del archivo 34. BD CURSOS, mueve los campos tal y como se indica:
-Filtro: PAIS (filtrar por España)
-Fila: CLIENTE
-Valores: IMPORTE CLIENTE
-Ordena la tabla dinámica por la suma del importe cliente de menor a mayor.
+- Filtro: PAIS (filtrar por España)
+- Fila: CLIENTE
+- Valores: IMPORTE CLIENTE
+- Ordena la tabla dinámica por la suma del importe cliente de menor a mayor.
 
 
 
-paso 1 al 4 y resultado  49 50 51 52 53 
-
-
-
-
-
-
-
-
-
-Cambiar el formato del campo de valores
-
-54
-
-Cambiar la etiqueta de valores
-
-55
-
-
-
-Cambiar la función de resumen del campo de valores
-para esto vamos agregar el area de valores importe cliente
-
-56 
-tenemos que cambiar en formato de columna por general para poder sacar el promedio 
-
-57- 58 
+- paso 1 al 4
+-
+-
+y resultado
+- 49 50 51 52 53
+- Cambiar el formato del campo de valores
+- 54
+- Cambiar la etiqueta de valores
+- 55
+- Cambiar la función de resumen del campo de valores
+- para esto vamos agregar el area de valores importe cliente
+- 56
+- tenemos que cambiar en formato de columna por general para poder sacar el promedio
+- 57- 58 
 
 
 - **Quitar un campo de la tabla dinámica**
 
-
-59
-Actualizar los datos de la tabla 
-60
-dinámica
-en casos de a ver cambiado informacion en cursos
-
-
-también podemos realizar filtros a través de los campos de fila y de los campos de columna. Si miramos la primera tabla dinámica que hemos insertado:
-
-61 - 64
-
-
-
-
-
-
-
-
-borrar filtros
+- 59
+- Actualizar los datos de la tabla
+- 60
+- dinámica
+- En casos de a ver cambiado informacion en cursos
+- también podemos realizar filtros a través de los campos de fila y de los campos de columna. Si miramos la primera tabla dinámica que hemos insertado:
+- 61
+-
+-
+- 64
+- borrar filtros
+- 65
+- 66
+- 7
+- 8
+- 9
 
 
 
-65
+## Complementos de Excel
 
-66-
-69
+- 70 
 
-
-
-
-
-
-
-
-
-
-
-
-7. Complementos de Excel
-
-70 
- son herramientas o programas suplementarios que se instalan dentro 
+--- 
+Son herramientas o programas suplementarios que se instalan dentro 
 
 Su objetivo principal es la automatización y la especialización. Sirven para:
-Conectar Excel con fuentes de datos externas (como Salesforce o SAP).
-Realizar análisis estadísticos o financieros complejos.
-Crear visualizaciones de datos avanzadas que no existen en los gráficos estándar.
-Limpiar datos masivos de forma automática. 
+- Conectar Excel con fuentes de datos externas (como Salesforce o SAP).
+- Realizar análisis estadísticos o financieros complejos.
+- Crear visualizaciones de datos avanzadas que no existen en los gráficos estándar.
+- Limpiar datos masivos de forma automática. 
 Las más recomendadas y por qué:
-Solver (Nativo):
-Por qué: Es indispensable para logística y finanzas. Encuentra el valor óptimo (máximo o mínimo) para una fórmula ajustando otras celdas bajo restricciones.
-Uso: Optimización de modelos con Solver
-Herramientas para análisis (Analysis ToolPak):
-Por qué: Ahorra horas de trabajo a estadísticos. Incluye herramientas para varianza, regresiones, histogramas y correlaciones.
-Uso: Análisis de datos complejos con un clic.
-Power User:
-Por qué: Es la navaja suiza para consultores. Añade mapas, diagramas de Gantt avanzados y una biblioteca de íconos profesional.
-Uso: Mejorar el diseño y la velocidad de creación de reportes.
-Wikipedia:
-Por qué: Permite buscar información y traer tablas de datos directamente desde la enciclopedia a tu hoja sin salir de Excel.
-Uso: Referenciar datos rápidos o definiciones.
-Lucidchart:
-Por qué: Excel es malo para diagramas de flujo. Este complemento te permite dibujar procesos y diagramas profesionales y pegarlos directo en tu celda.
-Uso: Documentación de procesos
+- Solver (Nativo): Es indispensable para logística y finanzas. Encuentra el valor óptimo (máximo o mínimo) para una fórmula ajustando otras celdas bajo restricciones.
+  - Uso: Optimización de modelos con Solver
+- Herramientas para análisis
+- (Analysis ToolPak): Ahorra horas de trabajo a estadísticos. Incluye herramientas para varianza, regresiones, histogramas y correlaciones. Uso: Análisis de datos complejos con un clic.
+- Power User:Es la navaja suiza para consultores. Añade mapas, diagramas de Gantt avanzados y una biblioteca de íconos profesional.Uso: Mejorar el diseño y la velocidad de creación de reportes.
+- Wikipedia: Permite buscar información y traer tablas de datos directamente desde la enciclopedia a tu hoja sin salir de Excel.Uso: Referenciar datos rápidos o definiciones.
+- Lucidchart: Excel es malo para diagramas de flujo. Este complemento te permite dibujar procesos y diagramas profesionales y pegarlos directo en tu celda.Uso: Documentación de procesos
 
 
 
