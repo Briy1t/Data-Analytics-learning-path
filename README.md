@@ -23,8 +23,7 @@ Aquí registraré:
            /___imagenes
            /___Modulo_1_Tabla_de_datos.md
            /___Modulo_2_Funciones.md
-
-
+           /___Certificado de finalización.m
 
 ```
 
