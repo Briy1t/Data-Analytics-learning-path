@@ -234,15 +234,15 @@ Ahora en la tabla en la que vamos a trabajar
 
 - Escribimos la siguiente formula 
 - =VLOOKUP([@REFERENCIA],Table1,2,0) al estar en una tabla la formula de forma automática pasa a estar en toda la columna
-- img 18
+- ![im_18](imagenes/i_18.png)
 - pasamos a la siguiente formula
 - =VLOOKUP([@REFERENCIA],Table1,4,0)
-- img 19
+- ![im_19](imagenes/i_19.png)
 - En la cinta de herramientas en la pestaña Home seleccionamos accounting el simbolo €
-- 20
+- ![im_20](imagenes/i_20.png)
 - pasamos a la última columna  en la celda F2 ingresamos la fórmula
 - =VLOOKUP([@REFERENCIA],Table1,3,0)
-- 21
+- ![im_21](imagenes/i_21.png)
 
 
 
@@ -250,16 +250,17 @@ Ahora en la tabla en la que vamos a trabajar
 
 - 29. EJERCICIO BUSCARV VERDADERO
 
-- img 22, 23
--
+- ![im_22](imagenes/i_22.png)
+- ![im_23](imagenes/i_23.png)
+  
 - =VLOOKUP(F2,$A$2:$C$8,3,1)
 - cambiamos el formato de número a porcentaje
-- 24 img
+- ![im_24](imagenes/i_24.png)
 
 
 ## Función SI
 Sirve para que Excel tome una decisión según una condición. Básicamente le digo: “si pasa esto, haz esto; y si no pasa, haz lo otro”. Funciona con tres partes: la condición que quiero comprobar, el resultado si la condición es verdadera y el resultado si es falsa. Por ejemplo, puedo usar SI para saber si un número es mayor que otro, si una celda está vacía o si un valor coincide con algo.
-- img 25
+- ![im_25](imagenes/i_25.png)
 - https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631
   
 ---
@@ -269,16 +270,16 @@ En la función SI, después de la condición, van dos argumentos:
 - Es como decirle a Excel:
 `“Si esto pasa, pon esto; y si no pasa, pon lo otro.”
 https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631`
-- img 26
-- img 27
+- ![im_26](imagenes/i_26.png)
+- ![im_27](imagenes/i_27.png)
 - recordar poner las referencias absolutas
-- img 28
+- ![im_28](imagenes/i_28.png)
 - es descuento del 10 % va hacer a los cursos que tengan una duración mayor a 18
-- img 29
+- ![im_29](imagenes/i_29.png)
 - =IF(B6>18,C6*$D$1,"SIN DT")
-- img 30
+- ![im_30](imagenes/i_30.png)
 - =IF(D6="SIN DT",C6,C6-D6)
-- 31 
+- ![im_31](imagenes/i_31.png)
 
 
 ## Introducción a las tablas dinámicas I
@@ -287,24 +288,24 @@ Una tabla dinámica en Excel es una herramienta que te deja resumir, organizar y
 ---
 
 **Insertar una tabla dinámica**
-- 32
+- ![im_32](imagenes/i_32.png)
 ---
 Abrimos el fichero , en la tabla cursos, seleccionamos una celda dentro de la tabla  que vamos a resumir 
 
 - En la cinta de herramientas en la opción insertar encontraremos la tabla dinamica
-- 33
+- ![im_33](imagenes/i_33.png)
 - hacemos click en form table/range, acontinuación aparece la siguiente ventana
-- 34
+- ![im_34](imagenes/i_34.png)
 - como podemos ver nos muestra en nombre de la tabla si fuera un rango nos mostraria la dirección rango de origen
 
 --- 
 tenemos dos opciones si queremos que se cree en una nueva hoja o en la misma hoja 
 - en este caso seleccionamos una nueva hoja
 - asi se  ve la nueva  hoja creada
-- 35
+- ![im_35](imagenes/i_35.png)
 - se denomina área de la tabla dinámica o esqueleto de la tabla dinámica.
 - En esta imagen podemos ver el panel de campos de la tabla dinamica
-- 36 
+- ![im_36](imagenes/i_36.png)
 
 
 --- 
@@ -346,35 +347,35 @@ En VALORES van los campos que quiero calcular.
 Continuamos con la actividad 
 
 - Seleccionamos cursos , lo llevamos a la opción filas de nuestro panel de opciones de tabla dinamica
-- 37
+- ![im_37](imagenes/i_37.png)
 - jornada curso lo pondremos en columnas
-- 38
+- ![im_38](imagenes/i_38.png)
 - en area de valores seleccionamos duración
-- 39
+- ![im_39](imagenes/i_39.png)
 - se filtran los datos por los cursos dados en Esppaña , para ello movemos el campo país a filtros
-- 40
+- ![im_40](imagenes/i_40.png)
 - seleccionamos en el filtro solo a ESPAÑA
-  41
-- 42
+- ![im_41](imagenes/i_41.png)
+- ![im_42](imagenes/i_42.png)
 - ahora vamos a insertar otra tabla dinámica en la misma hoja en la que estamos trabajando con la primera hoja dinámica.
 - para ello volvemos a la tabla de datos en la hoja de nombre CURSOS
 - en la cinta de herramientas seleccionamos insertar , tabla dinamica ,
-- 43
+- ![im_43](imagenes/i_43.png)
 - seleccionamos hoja existente
-- 44
+- ![im_44](imagenes/i_44.png)
 - seleccionamos el sector donde queremos que la nueva tabla dinámica se cree  , damos click en ok
-- 45
+- ![im_45](imagenes/i_45.png)
 
 
 ### Modificaciones en las tablas dinámicas
 Cambiar el orden de los campos de valores
 - seleccionamos la columna de nuestra tabla dinámica que queremos reordenar
-- 46
+- ![im_46](imagenes/i_46.png)
 - seleccionamos la opción más adecuada para este ejemplo
-- 47
+- ![im_47](imagenes/i_47.png)
 - podemos apreciar como se ordena la tabla dinámica
 - si queremos ordenar de forma descendente jornada del curso , se selecciona la última celda  de jornada de curso click derecho ordenar .
-- 48
+- ![im_48](imagenes/i_48.png)
   
 ---
 **Ejercicio**
@@ -385,47 +386,48 @@ En la tabla dinámica del archivo 34. BD CURSOS, mueve los campos tal y como se 
 - Ordena la tabla dinámica por la suma del importe cliente de menor a mayor.
 
 
-
 - paso 1 al 4
--
--
 y resultado
-- 49 50 51 52 53
+- ![im_49](imagenes/i_49.png)
+- ![im_50](imagenes/i_50.png)
+- ![im_51](imagenes/i_51.png)
+- ![im_52](imagenes/i_52.png)
+- ![im_53](imagenes/i_53.png)
 - Cambiar el formato del campo de valores
-- 54
+- ![im_54](imagenes/i_54.png)
 - Cambiar la etiqueta de valores
-- 55
+- ![im_55](imagenes/i_55.png)
 - Cambiar la función de resumen del campo de valores
 - para esto vamos agregar el area de valores importe cliente
-- 56
+- ![im_55](imagenes/i_55.png)
 - tenemos que cambiar en formato de columna por general para poder sacar el promedio
-- 57- 58 
+- ![im_56](imagenes/i_56.png)
+- ![im_57](imagenes/i_57.png)
+- ![im_58](imagenes/i_58.png)
 
 
 - **Quitar un campo de la tabla dinámica**
 
-- 59
+- ![im_59](imagenes/i_59.png)
 - Actualizar los datos de la tabla
-- 60
+- ![im_60](imagenes/i_60.png)
 - dinámica
 - En casos de a ver cambiado informacion en cursos
 - también podemos realizar filtros a través de los campos de fila y de los campos de columna. Si miramos la primera tabla dinámica que hemos insertado:
-- 61
--
--
-- 64
+- ![im_61](imagenes/i_61.png)
+- ![im_62](imagenes/i_62.png)
+- ![im_63](imagenes/i_63.png)
+- ![im_64](imagenes/i_64.png)
 - borrar filtros
-- 65
-- 66
-- 7
-- 8
-- 9
-
-
+- ![im_65](imagenes/i_65.png)
+- ![im_66](imagenes/i_66.png)
+- ![im_67](imagenes/i_67.png)
+- ![im_68](imagenes/i_68.png)
+- ![im_69](imagenes/i_69.png)
 
 ## Complementos de Excel
 
-- 70 
+- ![im_70](imagenes/i_70.png)
 
 --- 
 Son herramientas o programas suplementarios que se instalan dentro 
