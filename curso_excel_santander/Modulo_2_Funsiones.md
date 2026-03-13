@@ -254,14 +254,15 @@ Ahora en la tabla en la que vamos a trabajar
 - ![im_23](imagenes/i_23.png)
   
 - =VLOOKUP(F2,$A$2:$C$8,3,1)
-- cambiamos el formato de número a porcentaje
 - ![im_24](imagenes/i_24.png)
+- cambiamos el formato de número a porcentaje
+- ![im_25](imagenes/i_25.png)
 
 
 ## Función SI
 Sirve para que Excel tome una decisión según una condición. Básicamente le digo: “si pasa esto, haz esto; y si no pasa, haz lo otro”. Funciona con tres partes: la condición que quiero comprobar, el resultado si la condición es verdadera y el resultado si es falsa. Por ejemplo, puedo usar SI para saber si un número es mayor que otro, si una celda está vacía o si un valor coincide con algo.
-- ![im_25](imagenes/i_25.png)
-- https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631
+
+- ![im_26](imagenes/i_26.png)
   
 ---
 En la función SI, después de la condición, van dos argumentos:
@@ -270,7 +271,7 @@ En la función SI, después de la condición, van dos argumentos:
 - Es como decirle a Excel:
 `“Si esto pasa, pon esto; y si no pasa, pon lo otro.”
 https://lms.santanderopenacademy.com/courses/148/pages/5-funcion-si?module_item_id=3631`
-- ![im_26](imagenes/i_26.png)
+
 - ![im_27](imagenes/i_27.png)
 - recordar poner las referencias absolutas
 - ![im_28](imagenes/i_28.png)
