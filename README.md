@@ -1,10 +1,10 @@
 # Fundamentos de Análisis de Datos
 Autora: Liset — Analista de Datos Junior
 ---
-Este repositorio documenta mi proceso de formación como Analista de Datos. Aquí reúno apuntes, ejercicios, prácticas y mini‑proyectos 
-relacionados con las herramientas fundamentales del análisis de datos: Excel, SQL, Python, visualización y preparación de datos.
 
-- Mi objetivo es construir una base sólida que me permita avanzar hacia proyectos reales, casos de estudio y un portafolio profesional completo.
+Este repositorio reúne los apuntes y materiales que he estudiado relacionados con el análisis de datos. Incluye contenido del curso Santander de Excel y documentación del programa Google Data Analytics. Aunque actualmente no es mi trayectoria profesional principal, he decidido conservar y organizar este material porque forma parte de mi proceso de aprendizaje y puede ser útil en el futuro.
+
+Mi objetivo actual es avanzar en Linux, AWS y completar mis estudios de ASIR, pero mantengo este repositorio como base técnica y referencia personal.
 ---
 Contenido del repositorio:
 - **Excel**: para análisis de datos: Funciones, limpieza, tablas dinámicas, dashboards.
@@ -37,8 +37,9 @@ En proceso ...
 
 
 ## Estado del proyecto
-- En progreso.
-- Este repositorio crecerá a medida que avance en mi formación y complete proyectos.
+- En pausa temporal
+- Se ampliará cuando retome SQL, Python o proyectos de análisis de datos.
+
 
 ## Motivación personal
 Mi aprendizaje incluye áreas como Excel, SQL, Python, Linux, AWS y fundamentos de soporte IT. Empecé explorando estas herramientas por curiosidad y por la necesidad de reconstruir mis bases tecnológicas. Aunque el análisis de datos forma parte de mi formación, no me limito a una única trayectoria profesional. Mi objetivo es desarrollar una base técnica sólida que me permita avanzar hacia estudios de ASIR y, con el tiempo, encontrar el área dentro del mundo tecnológico donde mejor encaje. Este repositorio refleja ese proceso: aprender, documentar y construir competencias que me abran diferentes caminos profesionales.
