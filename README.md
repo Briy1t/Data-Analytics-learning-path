@@ -24,6 +24,18 @@ Contenido del repositorio:
 - Construir un portafolio profesional.
 - Mostrar mi progreso como analista.
 
+```texrt 
+curso_excel_santander/
+│
+├── Modulo_1_Tabla_de_datos.md
+├── Modulo_2_Funciones.md
+├── imagenes/
+└── certificado.pdf
+
+En proceso ...
+```
+
+
 ## Estado del proyecto
 - En progreso.
 - Este repositorio crecerá a medida que avance en mi formación y complete proyectos.
