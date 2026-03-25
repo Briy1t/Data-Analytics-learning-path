@@ -1,7 +1,7 @@
 # Primer análisis: Dataset 1 — Web Server Access Logs
 ## 1. Revisión inicial del dataset
 Antes de iniciar el análisis, se revisó el archivo en WordPad/VSCode y se observó que:
-- 1
+- ![](imagenes/1.png)
 - No es un log crudo del sistema
 - Es un archivo generado por un script que intentó resolver hostnames
 - Muchos hostnames no se resolvieron
@@ -9,12 +9,12 @@ Antes de iniciar el análisis, se revisó el archivo en WordPad/VSCode y se obse
 
 ## 2. Python (panda)
 Se uso Python para limpiar el dataset y extraer la información que sera util es decir direcciones ip y hostname 
-- 2
+- ![](imagenes/2.png)
 - guardamos el cvs limpio y lo proyecte en Excel
-- 3 
+- ![](imagenes/3.png)
 
 ## 3. Consultas SQL iniciales
-- 4
+- ![](imagenes/4.png)
 Se realizaron consultas para identificar:
 - Repetición de IPs
 - Hostnames reales vs no resueltos
@@ -22,7 +22,13 @@ Se realizaron consultas para identificar:
 - Rangos de IP
 - Distribución del tráfico
 
-- 5 6 7 8 9 10 11 
+- ![](imagenes/5.png)
+- ![](imagenes/6.png)
+- ![](imagenes/7.png)
+- ![](imagenes/8.png)
+- ![](imagenes/9.png)
+- ![](imagenes/10.png)
+- ![](imagenes/11.png)
 
 ## 4. Resultados preliminares
 **Hostnames**
@@ -54,7 +60,7 @@ Ejemplos:`contaboserver.net, m247.com, hostry.com`
 - Hostnames repetidos desde un mismo proveedor
 - `unknown.puregig.net`  aparece 31 veces, lo que sugiere un bot persistente o un proceso automatizado.
 
-- IPs sin hostname pero con comportamiento repetitivo ➡️Suelen corresponder a bots mal configurados, malware o dispositivos comprometidos.
+- IPs sin hostname pero con comportamiento repetitivo - Suelen corresponder a bots mal configurados, malware o dispositivos comprometidos.
 
 - Tráfico masivo desde rangos específicos
 - El rango 5.x.x.x domina el dataset.
