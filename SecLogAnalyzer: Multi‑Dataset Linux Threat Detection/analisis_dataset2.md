@@ -7,13 +7,12 @@ El segundo dataset del proyecto contiene tráfico de red generado por dispositiv
 Este dataset está compuesto por flujos de red (network flows), no por logs crudos, lo que significa que cada fila representa un resumen estadístico de una conexión.
 
 ## 2. Preparación del Dataset
-- ![](SecLogAnalyzer: Multi‑Dataset Linux Threat Detection/)
+
 - ![](imagenes/13.png)
-SecLogAnalyzer: Multi‑Dataset Linux Threat Detection/imagenes/13.png
-- 14
-- 15
-- 16
-- 17
+- ![](imagenes/14.png)
+- ![](imagenes/15.png)
+- ![](imagenes/16.png)
+- ![](imagenes/17.png)
 
 ### 2.1 Problemas detectados en el archivo original
 El dataset original presentaba varios inconvenientes:
@@ -69,13 +68,13 @@ print("Archivo guardado en:", output_file)
 ### 2.3 Conversión del CSV a base de datos SQLite
 Debido a limitaciones de las extensiones de VS Code y la ausencia del comando sqlite3 en Windows, se utilizó Python para crear la base de datos.
 
--18
--19
+- ![](imagenes/18.png)
+
 
 ## 3. Descripción del Dataset
-
+- ![](imagenes/19.png)
 - Total de registros: 123.117
-- 20
+
 ---
 - Tabla: datos
 - Columnas principales:
@@ -86,7 +85,7 @@ Debido a limitaciones de las extensiones de VS Code y la ausencia del comando sq
 - Métricas de flujo (flow_, fwd_, bwd_*)
 - attack_type (etiqueta de ataque)
 - Este dataset fue generado por herramientas de análisis de flujo como CICFlowMeter, Zeek o Argus.
-- 21
+- ![](imagenes/20.png)
 
 ## 4. Análisis del Tráfico IoT Normal
 ### 4.1 Servicios más usados
@@ -99,7 +98,7 @@ GROUP BY service
 ORDER BY total DESC;
 ```
 
-- 21
+- - ![](imagenes/21.png)
 - Hallazgos:
   - dns, mqtt, http, ssl → tráfico IoT normal
   - "-" → tráfico no clasificado (común en capturas reales)
@@ -118,7 +117,7 @@ FROM datos
 GROUP BY proto
 ORDER BY total DESC;
 ```
-- 22
+- - ![](imagenes/22.png)
 - Hallazgos:
   - Predomina TCP
   - UDP aparece por DNS
@@ -155,9 +154,9 @@ SELECT attack_type, COUNT(*) AS total
 FROM datos
 GROUP BY attack_type
 ORDER BY total DESC;
-Ataques detectados:
+
 ```
--23
+- - ![](imagenes/23.png)
 
 - DOS_SYN_Hping
 - ARP_poisoning
@@ -182,10 +181,10 @@ Ataques detectados:
 |Patrones	|Puertos destino fijos |	Escaneos múltiples|
 |Etiquetas	| Benign	|DoS, ARP, NMAP, Slowloris|
 ---
-- 24
-- 25
-- 26
-- 27
+- ![](imagenes/24.png)
+- ![](imagenes/25.png)
+- ![](imagenes/26.png)
+- ![](imagenes/27.png)
   
 ## 7. Conclusión del Dataset 2
 El análisis del Dataset 2 muestra que la red IoT combina tráfico legítimo con una presencia significativa de actividades maliciosas. El tráfico normal se concentra en servicios propios del entorno IoT, como MQTT (1883), DNS (53/5353) y HTTP/HTTPS (80/443), lo que refleja un funcionamiento estable y predecible de los dispositivos conectados.
