@@ -42,8 +42,8 @@
 |Limpieza y preparación del Dataset 1	|Semana 2	|Extracción de IP y hostname, CSV limpio.|
 |Análisis SQL del Dataset 1|	Semana 3|	Repeticiones, proveedores, rangos.|
 |Documentación del Dataset 1|	Semana 4	|Informe preliminar.|
-|Limpieza y análisis del Dataset 2 (SSH)	| Semanas 5–6	|Repeticiones, patrones internos, actividad sospechosa.|
-|Limpieza y análisis del Dataset 3 (ZMap / escaneos)	|Semanas 7–8	|Identificación de escaneo masivo.|
+|Limpieza y análisis del Dataset 2 	| Semanas 5–6	|Repeticiones, patrones internos, actividad sospechosa.|
+|Limpieza y análisis del Dataset 3 	|Semanas 7–8	|Identificación de escaneo masivo.|
 |Comparación entre datasets	|Semana 9	|Coincidencias entre IPs, proveedores y patrones.|
 |Informe final|Semana 10|	Documento completo del proyecto.|
 
