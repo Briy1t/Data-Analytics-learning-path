@@ -17,11 +17,11 @@ El archivo contiene registros de autenticación en servidores Linux, con informa
 
 ---
 Antes del análisis, el dataset fue limpiado y normalizado en Python, y posteriormente importado en DBeaver como:
-- 14
-- 15
+- ![](imagenes/i15.png)
+- ![](imagenes/i16.png)
 ---
 linux_auth_logs_labeled_clean
-- 16 
+- ![](imagenes/i17.png)
 
 ## 2. Consultas SQL utilizadas
 
@@ -32,7 +32,7 @@ FROM linux_auth_logs_labeled
 GROUP BY anomaly_label
 ORDER BY total DESC;
 ```
-- 17
+- ![](imagenes/i18.png)
 
 #### 3.1 Anomalías detectadas
 - **Normal**: La mayoría de eventos son benignos, lo cual es esperable en logs de autenticación.
@@ -49,7 +49,7 @@ GROUP BY username
 ORDER BY failed_attempts DESC
 LIMIT 10;
 ```
-- 18
+- ![](imagenes/i19.png)
 #### Analisis
 - **root**: siempre es el usuario más atacado.
 - **ubuntu**: usuario por defecto en servidores cloud.
@@ -66,7 +66,7 @@ GROUP BY source_ip
 ORDER BY total_events DESC
 LIMIT 10;
 ```
--19
+- ![](imagenes/i20.png)
 
 #### IPs con más actividad
 - Todas las IPs tienen solo 2 eventos.
@@ -81,7 +81,7 @@ FROM linux_auth_logs_labeled_clean
 GROUP BY protocol
 ORDER BY total_events DESC;
 ```
-- 20 
+- ![](imagenes/i21.png)
 #### Protocolos más usados
 - **SSH2**: normal en Linux.
 - **RDP**: muy inusual en Linux; indica entorno simulado o honeypot.
@@ -95,7 +95,7 @@ FROM linux_auth_logs_labeled_clean
 GROUP BY service
 ORDER BY total_events DESC;
 ```
-- 21
+- ![](imagenes/i22.png)
 #### Servicios más usados
 - **sudo / su**: intentos de escalada de privilegios.
 - **ssh**: accesos remotos, vector principal de fuerza bruta.
@@ -109,7 +109,7 @@ FROM linux_auth_logs_labeled_clean
 GROUP BY server
 ORDER BY total_events DESC;
 ```
-- 22
+- ![](imagenes/i23.png)
 #### Servidores con más actividad
 - **proxy**: expuesto a internet
 - **monitor**: servidor de monitoreo
@@ -126,7 +126,7 @@ FROM linux_auth_logs_labeled_clean
 GROUP BY hour
 ORDER BY hour;
 ```
-- 23 
+- ![](imagenes/i24.png)
 #### Actividad por hora
 - Actividad constante
 - Ataques automatizados
@@ -138,14 +138,14 @@ SELECT *
 FROM linux_auth_logs_labeled_clean
 WHERE anomaly_label = 'privilege_escalation';
 ```
-- 24
+- ![](imagenes/i25.png)
 ### 2.9 Port scan
 ```sql
 SELECT *
 FROM linux_auth_logs_labeled_clean
 WHERE anomaly_label = 'port_scan';
 ```
--25
+-![](imagenes/i26.png)
 
 ### 2.10 Geo anomaly
 ```sql
@@ -153,14 +153,14 @@ SELECT *
 FROM linux_auth_logs_labeled_clean
 WHERE anomaly_label = 'geo_anomaly';
 ```
--26
+- ![](imagenes/i27.png)
 ## Graficos
 1. Tipos de anomalías 
-- 27
+- ![](imagenes/i28.png)
 2. Actividad por hora
-- 28 
+- ![](imagenes/i29.png)
 3. Usuarios con más intentos fallidos 
-- 29
+- ![](imagenes/i30.png)
 ## 4. Conclusiones 
 ### Privilege Escalation  
 Se observan múltiples ejecuciones de sudo desde usuarios de servicio, lo cual es anómalo y sugiere actividad simulada o automatizada.
