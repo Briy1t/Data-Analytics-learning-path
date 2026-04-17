@@ -95,3 +95,14 @@ El Dataset 1 representa tráfico:
 - Con fuerte presencia de bots, escáneres y servidores remotos
 - Con muy poca actividad atribuible a usuarios reales
 
+## Conclusión Dataset 1
+
+El análisis del Dataset 1 muestra que el tráfico recibido por el servidor no corresponde al comportamiento típico de usuarios reales, sino a un entorno expuesto a Internet donde predominan procesos automatizados, escáneres y bots distribuidos. La revisión inicial del archivo revela que los hostnames fueron generados por un script de resolución DNS, lo que permite identificar patrones de origen, repetición y comportamiento sin necesidad de disponer del log crudo original.
+
+Los resultados indican que más del 68% de las direcciones IP no tienen hostname resoluble, lo que es característico de tráfico automatizado, dispositivos comprometidos o bots mal configurados. Entre los hostnames que sí se resolvieron, destacan proveedores asociados a escaneo masivo, redes de anonimato y VPS de bajo coste, como puregig.net, AS51430, getmyip.co y zmap.sorengard.com. La presencia de ZMap es especialmente relevante, ya que se trata de una herramienta utilizada para reconocimiento a gran escala, lo que confirma actividad de escaneo sistemático.
+
+El rango 5.x.x.x, dominante en el dataset, pertenece a proveedores internacionales con alta actividad automatizada, lo que refuerza la hipótesis de que el tráfico proviene de bots distribuidos globalmente. Asimismo, la repetición de hostnames como unknown.puregig.net sugiere procesos persistentes o nodos que ejecutan tareas de reconocimiento de forma continua.
+
+Aunque el dataset no incluye rutas HTTP completas, se identificaron las rutas típicamente atacadas en este tipo de escenarios (/wp-login.php, /admin, /phpmyadmin, /xmlrpc.php), lo que permite contextualizar el tipo de actividad que probablemente estaba recibiendo el servidor: intentos de fuerza bruta, escaneo de paneles de administración y búsqueda de scripts vulnerables.
+
+En conjunto, el Dataset 1 representa un entorno donde el tráfico es mayoritariamente automatizado, distribuido e internacional, con una presencia significativa de bots, escáneres y servidores remotos. La actividad humana es prácticamente inexistente. Este comportamiento es coherente con lo que experimenta cualquier servidor expuesto a Internet: un flujo constante de reconocimiento, escaneo y tráfico no solicitado que constituye la base del “ruido” habitual de la red.
