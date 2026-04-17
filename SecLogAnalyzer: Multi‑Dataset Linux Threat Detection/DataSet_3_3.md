@@ -13,7 +13,7 @@ Antes del análisis, se revisó la estructura del dataset y se corrigieron:
 - Filas corruptas
 - Una vez limpio, se importó en DBeaver para realizar consultas SQL.
   
-- 3
+- ![](imagenes/ii3.png)
 
 ## 2. IPs con más intentos de autenticación
 
@@ -23,7 +23,7 @@ FROM dataset
 GROUP BY source_ip
 ORDER BY total_intentos DESC;
 ```
-- 4
+- ![](imagenes/ii4.png)
 ### Hallazgos:
 - Un pequeño grupo de IPs registra 6 intentos fallidos.
 - Un grupo muy grande registra 3 intentos fallidos exactamente.
@@ -40,7 +40,7 @@ FROM dataset
 GROUP BY username
 ORDER BY total_eventos DESC;
 ```
-- 5
+- ![](imagenes/ii5.png)
 ### Hallazgos:
 - root: cuenta administrativa, objetivo habitual de ataques.
 - nginx / www-data: cuentas de servicios web, muy atacadas.
@@ -59,7 +59,7 @@ FROM dataset
 GROUP BY service
 ORDER BY total_eventos DESC;
 ```
-- 6
+- ![](imagenes/ii6.png)
 ### Hallazgos:
 - ssh y login: intentos de acceso remoto.
 - sudo y su: intentos de escalada de privilegios.
@@ -77,7 +77,7 @@ WHERE status = 'Failed'
 GROUP BY source_ip
 ORDER BY fallos DESC;
 ```
-- 7
+- ![](imagenes/ii7.png)
 ### Refuerza el patrón de fuerza bruta distribuida.
 
 ## 6. Protocolos utilizados
@@ -88,7 +88,7 @@ FROM dataset
 GROUP BY protocol
 ORDER BY total DESC;
 ```
-- 8
+- ![](imagenes/ii8.png)
 ### Hallazgos:
 - Aparecen TELNET y RDP, protocolos inseguros o no típicos en Linux.
 - TELNET transmite credenciales sin cifrar.
@@ -105,7 +105,7 @@ FROM dataset
 GROUP BY city
 ORDER BY total DESC;
 ```
-- 9
+- ![](imagenes/ii9.png)
 - Ciudades como Tokyo, New York, Singapore, Berlin y London aparecen repetidamente, lo cual es típico de tráfico distribuido global.
 
 ## 8. Actividad por puerto
@@ -116,7 +116,7 @@ FROM dataset
 GROUP BY port
 ORDER BY total DESC;
 ```
--10
+- ![](imagenes/ii10.png)
 ### Puertos observados:
 - 22 (SSH) – normal
 - 80 / 443 – inusual para autenticación
@@ -130,7 +130,7 @@ FROM dataset
 GROUP BY hora
 ORDER BY hora;
 ```
-- 11
+- ![](imagenes/ii11.png)
 - Los patrones horarios son consistentes con actividad automatizada.
 
 ## 10. Combinación IP + usuario
@@ -141,18 +141,18 @@ FROM dataset
 GROUP BY source_ip, username
 ORDER BY total DESC;
 ```
-- 12
+- ![](imagenes/ii12.png)
 - Confirma que una misma IP prueba múltiples usuarios → fuerza bruta.
 
 ## Graficas
 - **IPs mas usadas**
 - vemos la disfribución del ataque
-- 13
+- ![](imagenes/ii13.png)
 - **Usuarios de intentos de autenticación**
-- 14
+- ![](imagenes/ii14.png)
 - Notamos un patron de nombres parecidos en su terminación
 - **Servicios más usados**
-- 15
+- ![](imagenes/ii15.png)
 - ssh/login → intentos de acceso remoto
 - sudo/su → escalada de privilegios
 - cron → actividad automatizada o sintética
