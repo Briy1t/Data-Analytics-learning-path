@@ -128,28 +128,80 @@ Definición de preguntas clave:
   - Basado en trabajo semanal, con una duración estimada de 10 semanas.
 
 ## 8. Documentos incluidos en el repositorio
-
-- Inicio_del_proyecto.md
-- PROJECT_CHARTER_Análisis_Logs_Servidores_Linux.md
-- Analisis_dataset_1.md
-- analisis_dataset2.md
-- Dataset_3.1.md
-- Dataset_3.2.md
-- Carpeta de imágenes
-
+A continuación se presenta la estructura completa del repositorio, organizada por categorías y con una breve descripción de cada archivo.
 
 ---
-En progreso:
-- Dataset 3.3
-- Análisis de los tres datasets grandes
-- Comparación final
-- Informe final
 
-## 9. Próximos pasos
-- Finalizar análisis del Dataset 3.3
-- Integrar conclusiones de los tres sub-datasets
-- Analizar los datasets grandes
-- Generar visualizaciones finales
-- Redactar informe final
+## 1. Documentación inicial del proyecto
+
+| Archivo | Descripción |
+|--------|-------------|
+| **Inicio_del_proyecto.md** | Explica el punto de partida, objetivos iniciales y alcance general. |
+| **PROJECT_CHARTER_Análisis_Logs_Servidores_Linux.md** | Documento formal del proyecto: propósito, alcance, entregables, metodología y criterios de éxito. |
+
+---
+
+## 2. Análisis de los datasets principales
+
+### Dataset 1 – Tráfico Web
+
+| Archivo | Descripción |
+|--------|-------------|
+| **Analisis_dataset_1.md** | Análisis completo del Dataset 1: limpieza, patrones de tráfico, proveedores, rangos IP, bots y escáneres. |
+
+---
+
+### Dataset 2 – Tráfico IoT
+
+| Archivo | Descripción |
+|--------|-------------|
+| **analisis_dataset2.md** | Análisis del Dataset 2: tráfico IoT normal vs ataques etiquetados (SYN Flood, ARP poisoning, NMAP, Slowloris, SSH brute force). |
+
+---
+
+###  Dataset 3 – Logs de Autenticación Linux
+
+Este dataset se divide en tres subconjuntos (3.1, 3.2 y 3.3). Cada uno tiene su propio análisis.
+
+| Archivo | Descripción |
+|--------|-------------|
+| **Dataset_3.1.md** | Análisis del subconjunto 3.1: actividad SSH, procesos internos, intentos fallidos y distribución geográfica. |
+| **Dataset_3,2.md** | Análisis del subconjunto 3.2: escalada de privilegios, escaneos internos y anomalías. |
+| **DataSet_3_3.md** | Análisis del subconjunto 3.3: fuerza bruta distribuida, diccionarios de usuarios, servicios críticos y protocolos inseguros. |
+| **Conclusión_Consolidada_del_Dataset_3_(3.1, 3.2 y 3.3).md** | Documento que integra las conclusiones de los tres subconjuntos del Dataset 3. |
+
+---
+
+## 3. Integración y comparativas
+
+| Archivo | Descripción |
+|--------|-------------|
+| **Comparación_Final.md** | Comparación entre los tres datasets principales (1, 2 y 3) para detección de amenazas. |
+| **Informe_Final.md** | Informe final del proyecto: metodología, análisis, visualizaciones, conclusiones y trabajo futuro. |
+
+---
+
+## 4. Recursos adicionales
+
+| Carpeta | Descripción |
+|--------|-------------|
+| **imagenes/** | Contiene los gráficos generados en Excel para los análisis del Dataset 3. |
+
+---
+
+## Estado actual del repositorio
+
+### ✔ Completado
+- Dataset 1  
+- Dataset 2  
+- Dataset 3.1  
+- Dataset 3.2  
+- Dataset 3.3  
+- Conclusión consolidada del Dataset 3  
+- Comparación final  
+- Informe final  
+- Documentación inicial  
+- Carpeta de imágenes  
+
 
 
