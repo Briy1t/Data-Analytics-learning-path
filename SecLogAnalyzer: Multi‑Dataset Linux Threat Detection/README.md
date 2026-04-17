@@ -151,6 +151,5 @@ En progreso:
 - Analizar los datasets grandes
 - Generar visualizaciones finales
 - Redactar informe final
-- Publicar dashboard
 
 
